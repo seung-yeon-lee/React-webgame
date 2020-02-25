@@ -25,7 +25,7 @@ export default class ResponseCheck extends Component {
                 });
                 this.startTime = new Date()
             }, timer); //2~3초 랜덤
-            if(timer) console.log('타이머 작동')
+            
         }else if(state === 'ready'){ //급하게 눌렀을 시
             clearTimeout(this.timeout);
             this.setState({

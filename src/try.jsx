@@ -8,7 +8,7 @@ import React,{ PureComponent, memo} from 'react';
 //             <div>{tryInfo.try}</div>
 //             <div>{tryInfo.result}</div>
 //         </li> 
-//         );
+//         ); 
 //     }
 // }
 // --- hooks로 변경 code ---

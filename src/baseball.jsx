@@ -74,7 +74,7 @@ const NumberBaseball = memo(() => {
     };
 
     return (
-        <>
+        <div style={{borderBottom:'1px solid'}}>
             <span>Number Baseball games..</span>
             <h1>{result}</h1>
             <form onSubmit={onSubmit}>
@@ -93,7 +93,7 @@ const NumberBaseball = memo(() => {
                     <Try key={`${i + 1}: ${v.try}`} tryInfo={v} />
                 ))}
             </ul>
-        </>
+        </div>
     );
 }
 );
