@@ -1,3 +1,5 @@
+// class Component
+
 import React, { Component } from 'react';
 
 export default class ResponseCheck extends Component {
@@ -39,17 +41,27 @@ export default class ResponseCheck extends Component {
                 state:'waiting',
                 message: '클릭해서 시작하세요',
                 result:[...prevState.result, this.endTime - this.startTime]
+                //이전 값에 push 마지막 시간 - 처음 누른 시간 = 반응속도 결과
              }
+             
         })
+       
     }
  };
-
+    onClicked = () => {
+        this.setState({
+            result:[],
+            message:'초기화 되었습니다. 다시 시작하세요'
+        })
+    };
     renderAverage = () => {
         const {result} = this.state;
         return(
             result.length === 0
             ? null
-            : <div>평균 시간:{result.reduce((a,c)=>a+c) /result.length}ms</div>
+            : <><div>평균 시간:{result.reduce((a,c)=>a+c) /result.length}ms</div>
+            <button onClick={this.onClicked}>Reset</button>
+            </>
         )     
     }
 
@@ -66,4 +78,4 @@ export default class ResponseCheck extends Component {
     </>
         )
     }
-};
+};   
