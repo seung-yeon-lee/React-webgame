@@ -183,7 +183,7 @@ export default NumberBaseball;
 //             }
 //           })
 //         }
-//      }
+//      };
 //   };
 // onChange = (e) => {
 //     this.setState({
