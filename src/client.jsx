@@ -4,12 +4,14 @@ import WordRelay from './wordrelay'
 import Functional from './functional'
 import NumberBaseball from './baseball'
 import ResponseCheck from './responseCheck'
+import RSP from './RSP'
 
-const{hot} = require('react-hot-loader/root');
+const { hot } = require('react-hot-loader/root');
 
 const Hot = hot(Functional);
 const Relay= hot(WordRelay);
 const Baseball = hot(NumberBaseball);
-const Response = hot(ResponseCheck)
+const Response = hot(ResponseCheck);
+const Rsp = hot(RSP)
 
-ReactDOM.render(<div><Hot /><Relay /><Baseball /><Response/></div>,document.querySelector('#root'))
+ReactDOM.render(<div><Baseball /><Response/><Rsp /></div>,document.querySelector('#root'))
