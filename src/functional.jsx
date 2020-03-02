@@ -41,7 +41,7 @@ const onChange = e =>{
             </form>
             <span>{result}</span>
             </div>
-        <div style={{paddingTop:'20px', borderBottom:'1px solid'}}>
+<!--         <div style={{paddingTop:'20px', borderBottom:'1px solid'}}>
             현재 카운터는 {count} 입니다.
             <p>
             <button onClick={ () => {setCount(count + 1)}}>+1</button>
@@ -50,7 +50,7 @@ const onChange = e =>{
             <button onClick={ () => {setCount(count / 2)}}>/2</button>
             <button onClick={ () => {setCount(0)}}>Reset</button>
             </p>
-        </div>
+        </div> -->
         </div>
     )
 }
