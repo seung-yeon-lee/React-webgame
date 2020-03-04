@@ -8,6 +8,7 @@ const Table = ({tableData,dispatch}) => {
             <Tr dispatch={dispatch} rowIndex={i} rowData={tableData[i]} />)}
         </table>
     )
+    
 }
     
 export default Table;  
