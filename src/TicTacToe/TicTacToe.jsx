@@ -110,7 +110,7 @@ const TicTacToe = () => {
         {winner &&<div>{winner}님의 승리</div>}
     </>
     ) 
-}
+};
 
 export default TicTacToe;
 
