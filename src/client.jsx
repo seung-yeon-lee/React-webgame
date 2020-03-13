@@ -1,17 +1,9 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
-import WordRelay from './wordrelay'
-import Functional from './functional'
-import NumberBaseball from './baseball'
-import ResponseCheck from './responseCheck'
-import RSP from './RSP'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { hot } from 'react-hot-loader/root';
 
-const { hot } = require('react-hot-loader/root');
+import Games from './Games';
 
-const Hot = hot(Functional);
-const Relay= hot(WordRelay);
-const Baseball = hot(NumberBaseball);
-const Response = hot(ResponseCheck);
-const Rsp = hot(RSP)
+const Hot = hot(Games);
 
-ReactDOM.render(<div><Baseball /><Response/><Rsp /></div>,document.querySelector('#root'))
+ReactDOM.render(<Hot />, document.querySelector('#root'));
