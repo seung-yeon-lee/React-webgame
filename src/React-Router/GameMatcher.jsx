@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import NumberBaseball from '../3.숫자야구/NumberBaseballClass'
-import RSP from '../5.가위바위보/RSPClass'
-import Lotto from '../6.로또/LottoClass'
+import NumberBaseball from ''/baseball'
+import RSP from '../RSP'
+import Lotto from '../lotto'
 
 class GameMatcher extends Component {
   render() {
